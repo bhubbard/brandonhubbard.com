@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post
+title: Hello Jekyll
 category : web-development
 tags : [how-to, jekyll]
 ---
