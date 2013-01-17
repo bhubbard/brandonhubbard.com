@@ -8,8 +8,13 @@ html,body {
 }
 
 #wrap {
-	min-height:100%;
+		min-height:100%;
+	    height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
 }
+
 
 body {
 	margin:0 auto;
