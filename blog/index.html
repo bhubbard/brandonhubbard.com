@@ -5,7 +5,7 @@ tagline: "a Los Angeles based web developer"
 ---	
 	
 <ul class="posts">
-	{% for post in site.posts %}
+	{% for post in site.categories.blog %}
 	<li>
 		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		{% if post.description %}

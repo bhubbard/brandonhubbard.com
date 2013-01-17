@@ -1,21 +1,11 @@
 ---
-layout: homepage
+layout: projects
 title: Projects
 ---
 
-
-
-  <h2>Projects</h2>
   <p>Check out my latest projects!</p>
 
-<ul class="entries">
-  {% for post in site.categories.projects %}
-  <li>
-    <a href="{{ post.url }}">
-      <img src="{{ post.image }}" />
-      <h3>{{ post.title }}</h3>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+<article class="post">
+	{{ site.categories.projects }}
+</article>
 
