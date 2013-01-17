@@ -1,0 +1,19 @@
+---
+layout: page
+title: Archive
+---
+
+<div class="entry-content">
+									<p>I am a web developer for <a href="http://imforza.com/">imFORZA</a>, a small startup based out of beautiful <a href="http://en.wikipedia.org/wiki/El_Segundo,_California">El Segundo, CA</a>. When I am not coding or commuting on the <strong>405</strong> listening to <a href="http://twit.tv/">TWIT</a>, I love to travel to far places or snowboard the local slopes. I also enjoy long walks with my dog Dash.</p>
+<p>&nbsp;</p>
+<p>I also now have a <a title="Blog" href="http://clientsite.dev/blog/">blog</a> you can read.</p>
+			
+	</div><!-- .entry-content -->
+
+
+
+<ul>
+{% for post in site.posts %}
+<li><span>{{ post.date | date: "%Y %m %d" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
