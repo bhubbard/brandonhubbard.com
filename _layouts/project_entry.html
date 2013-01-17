@@ -1,6 +1,10 @@
----
-layout: default
----
+{% include header.html %}
+
 <h2 class="content">{{page.title}}</h2>
-<img src="{{ page.image }}" />
+ <a href="{{ post.url }}">
+      <img src="{{ post.image }}" />
+      <h3>{{ post.title }}</h3>
+    </a>
 {{ content }}
+
+{% include footer.html %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello Jekyll
-category : web-development
+category : blog
 tags : [how-to, jekyll]
 ---
 

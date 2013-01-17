@@ -5,5 +5,5 @@ name: brandon
 auto:  true
 server:  false
 server_port:  4000
-permalink: /blog/:title.html
+permalink: /:categories/:title.html
 paginate: 10
