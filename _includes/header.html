@@ -26,7 +26,7 @@
 
 
 
-		<title>{{ page.title }} | BrandonHubbard</title>
+		<title>{% if page.title %} {{ page.title }} | {% endif %} BrandonHubbard</title>
 	</head>
 
 	<body>
@@ -39,7 +39,7 @@
 <h1 id="logo">
 			<a href="/"><img alt='' src="http://0.gravatar.com/avatar/003c2f987c508f5f7650070c72f81c3b?s=100&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G" class="avatar" height="100" width="100" /></a>
 	<a href="/"><div class="brandon">BRANDON</div><div class="hubbard">HUBBARD</div></a>
-	<div class="logo-page-title">//{{ page.title }}</a></h1>
+	<div class="logo-page-title">//{% if page.title %} {{ page.title }} {% endif %}</a></h1>
 
 <br />
 
