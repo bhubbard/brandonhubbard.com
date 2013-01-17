@@ -1,15 +1,11 @@
 {% include header.html %}
 
-<header id="begin">
-	<time datetime="{{ entry.date }}" id="top_time">{{ page.date | date: "%B %d, %Y" }}</time>
-</header>
-
-{% assign entry = page %}
-
-{% capture entry_content %}
+<article class="post">
+	<header>
+		<h2 class="post-header">{{ page.title }}</h2>
+		<time datetime="{{ entry.date }}" id="top_time">{{ page.date | date: "%B %d, %Y" }}</time>
+	</header>
 	{{ content }}
-{% endcapture %}
-
-{% include post.html %}
+</article>
 
 {% include footer.html %}

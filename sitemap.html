@@ -1,0 +1,16 @@
+---
+layout: page
+title: "Sitemap"
+---
+
+<ul class="posts">
+	{% for post in site.posts %}
+	<li>
+		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		{% if post.description %}
+		<p>{{ post.description }}</p>
+		{% endif %}
+		<p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
+	</li>
+	{% endfor %}
+</ul>
