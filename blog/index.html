@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Blog"
+tagline: "a Los Angeles based web developer"
+---	
+	
+					{% for entry in paginator.posts %}
+	{% if entry.layout == 'quote' %}
+		{% include quote.html %}
+	{% else %}
+		{% capture entry_content %}
+			{{ entry.content }}
+		{% endcapture %}
+
+		{% include post.html %}
+	{% endif %}
+{% endfor %}
+
+<nav class="pagination">
+	{% if paginator.previous_page %}
+	<span class="prev">
+		{% if paginator.previous_page == 1 %}
+		<a href="/">←&nbsp;&nbsp;&nbsp;Newer</a>
+		{% else %}
+		<a href="/page{{paginator.previous_page}}">←&nbsp;&nbsp;&nbsp;Newer</a>
+		{% endif %}
+	</span>
+	{% endif %}
+
+	{% if paginator.next_page %}
+	<span class="next">
+		<a href="/page{{paginator.next_page}}">Older&nbsp;&nbsp;&nbsp;→</a>
+	</span>
+	{% endif %}
+</nav>

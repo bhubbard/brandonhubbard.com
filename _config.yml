@@ -1,4 +1,9 @@
-safe:        false
-auto:        false
-server:      false
-server_port: 4000
+safe:  true
+lsi: false
+markdown: kramdown
+name: brandon
+auto:  true
+server:  false
+server_port:  4000
+permalink: /:categories/:title.html
+paginate: 10
