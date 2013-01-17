@@ -122,6 +122,25 @@ span.breadcrumb_last {
 }
 
 
+
+ul.posts {
+	margin: 0;
+}
+ul.posts li {
+	list-style-type: none;
+}
+
+ul.posts li a {
+	color: #000;
+}
+
+p.post_date {
+	color: #ccc;
+}
+
+
+
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { }
  
