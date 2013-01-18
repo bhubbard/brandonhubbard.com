@@ -7,6 +7,14 @@ html,body {
 	height:100%;
 }
 
+p {
+	margin-bottom: 20px;
+}
+
+.post ul li {
+	margin: 10px 0;
+}
+
 #wrap {
 min-height: 100%;
 height: auto !important;
@@ -63,6 +71,11 @@ pre,code {
 
 h1,h2,h3,h4 {
 	color:#000;
+	margin: 10px 0 0 0;
+}
+
+#top_time {
+	color: #999;
 }
 
 h1 a, h2 a  {
@@ -142,9 +155,6 @@ img.avatar {
 	height: 100px;
 }
  }
-
-
-
 
 
 
