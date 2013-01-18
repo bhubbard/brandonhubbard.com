@@ -3,8 +3,11 @@
 	<head>
 		<meta charset='utf-8' />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Brandon Hubbard is a Los Angeles Based Web Developer currently building website for imFORZA." />
-		<meta name="keywords" content="brandon hubbard, tech, media temple, imforza, mountain high, wordpress, coder" />
+		
+		<meta name="robots" content="index, follow" />
+		
+		<meta name="description" content="{{ page.description }}" />
+		<meta name="keywords" content="{{ page.keywords }}" />
 		<meta name="author" content="Brandon Hubbard" />
 
 		<link rel="alternate" type="application/atom+xml" href="/feed/" title="BrandonHubbard.com" />
@@ -45,7 +48,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" type="text/javascript"></script>
 
-		<title>{% if page.title %} {{ page.title }} - {{ page.category }} - {% endif %} BrandonHubbard.com</title>
+		<title>{% if page.title %} {{ page.title }} - {% endif %} BrandonHubbard.com</title>
 	</head>
 
 <body>
@@ -55,24 +58,39 @@
 <div class="row-fluid">
 <div class="span8 offset2">
 
-<h2 class="brand" id="logo">
-			<a href="/"><img alt='' src="//www.gravatar.com/avatar/3596404cbc9ffb7d4f48524e08340d86.png" class="avatar" height="100" width="100" />
-	<span class="brandon">BRANDON</span><span class="hubbard">HUBBARD</span></a>
-	<!-- <span class="logo-page-title">//{% if page.title %} {{ page.title }} {% endif %}</span> --></h2>
-	
-<hr />
-
+<div id="logo">
+			<a href="/"><img alt='' src="//en.gravatar.com/userimage/6173818/4f8630a03b31d3b3d50e9be6d597bfca.png" class="avatar" height="100" width="100" />
+			<div class="brand"><span class="brandon">BRANDON</span><span class="hubbard">HUBBARD</span><div class="tagline">Web Design & Development</div></div></a>
 </div>
-</div><!-- end row -->
+	<br />
+</div>
+</div>
 </div>
 </header>
 
-<section>
+<nav>
+<div class="container">
+	<div class="row-fluid">
+		<div class="span8 offset2">
+			<div class="navbar">
+			<div class="navbar-inner">
+				<ul class="nav">
+					<li><a href="/">Home</a></li>
+					<li class="divider-vertical"></li>
+					<li><a href="/projects/">Projects</a></li>
+					<li class="divider-vertical"></li>
+					<li><a href="/blog/">Blog</a></li>
+				</ul>
+			</div>
+			</div>
+
+</div>
+</div>
+</div>
+</nav>
+
+
   <div id="wrap">
-      <div id="main">
+  
 <br />
 
-<div class="container">
-<div class="row-fluid">
-
-<div class="span8 offset2">
