@@ -1,10 +1,18 @@
 {% include header.html %}
 
+<div class="container">
+<div class="row">
+<div class="span8 offset2">
+
 <h2 class="content">{{page.title}}</h2>
  <a href="{{ post.url }}">
       <img src="{{ post.image }}" />
       <h3>{{ post.title }}</h3>
     </a>
 {{ content }}
+
+</div>
+</div>
+</div>
 
 {% include footer.html %}

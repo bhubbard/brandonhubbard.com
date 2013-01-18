@@ -23,7 +23,7 @@ body {
 }
 
 
-
+/* Logo Stuff */
 .brandon {
 	display:inline;
 	color:#000;
@@ -44,22 +44,11 @@ div.tagline {
 	color: #000;
 	font-size: 25px;
 }
-
-
-
 div#logo a {
 	color:#ddd;
 	text-decoration:none;
 	font-size:26px;
 }
-
-.logo-page-title {
-	display:inline;
-	color:#ddd;
-	font-weight:100;
-	font-size:32px;
-}
-
 
 
 pre,code {
@@ -97,10 +86,6 @@ h1 a:hover,h1 a:focus, h2 a:hover,h2 a:focus {
 	float: left;
 }
 
-.brand {
-	clear: left;
-	display: inline-block;
-}
 
 .footer {
 	margin-top:50px;
@@ -141,7 +126,6 @@ p.post_date {
 }
 
 
-.navbar-inner, .nav {text-align: center;}
 
 
 
