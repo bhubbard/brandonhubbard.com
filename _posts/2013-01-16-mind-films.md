@@ -1,7 +1,7 @@
 ---
 layout: project_entry
 title: Mind Films
-img: ../files/mind-films.png
+img: <img src="../files/mind-films.png" alt="mind-films" width="300" height="300" />
 category: projects
 ---
 
