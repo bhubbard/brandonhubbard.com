@@ -139,12 +139,37 @@ p.post_date {
 }
 
 
+h3.hp-preview a {
+	color: #000;
+}
+
+h3.hp-preview  {
+	margin: 0;
+	font-size: 16px;
+	padding: 0;
+
+}
+
+p.post_date {
+	margin-top: 10px;
+}
 
 
 
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { }
+@media (max-width: 767px) { 
+	
+	div.latest-posts {
+	text-align: center;
+}
+
+p.post_date.pull-right {
+	text-align: center;
+	float: none;
+	margin-top: -8px;
+}
+}
  
 /* Landscape phones and down */
 @media (max-width: 480px) { 
@@ -154,10 +179,16 @@ img.avatar {
 	width: 100px;
 	height: 100px;
 }
+div.latest-posts {
+	text-align: center;
+}
+
+p.post_date.pull-right {
+	text-align: center;
+	float: none;
+	margin-top: -8px;
+}
  }
-
-
-
 
 
 
