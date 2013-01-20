@@ -16,4 +16,4 @@ This is my first post on my new site written in Markdown and built in Jekyll.  I
 * Hosted on Github  
 
 
-This site is still very much in flux, so except many more changes.
+This site is still very much in flux, so many more changes are coming.
