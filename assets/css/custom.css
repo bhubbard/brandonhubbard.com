@@ -159,6 +159,44 @@ p.post_date {
 
 
 
+
+.adipoli-wrapper
+{
+    margin:auto;
+    position:relative;
+    display: inline-block;
+}
+.adipoli-wrapper>img
+{
+    position: absolute;
+    z-index: 1;
+}
+.adipoli-before
+{
+    position: absolute;
+    z-index: 5;
+}
+.adipoli-after
+{
+    position: absolute;
+    z-index: 10;
+}
+.adipoli-slice {
+    display:block;
+    position:absolute;
+    z-index:15;
+    height:100%;
+}
+.adipoli-box
+{
+    display:block;
+    position:absolute;
+    z-index:15;
+}
+
+
+
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
 	
@@ -191,7 +229,6 @@ p.post_date.pull-right {
 	margin-top: -8px;
 }
  }
-
 
 
 
