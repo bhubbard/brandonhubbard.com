@@ -196,6 +196,7 @@ p.post_date {
 
 
 
+.touchdown {display: none;}
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
@@ -228,6 +229,12 @@ p.post_date.pull-right {
 	float: none;
 	margin-top: -8px;
 }
+
+p {text-align: justify;}
+
+.nav {display: none !important;}
+.navbar-inner {background: none !important;border:none;}
+.touchdown {display: block !important; width: 100%;}
  }
 
 

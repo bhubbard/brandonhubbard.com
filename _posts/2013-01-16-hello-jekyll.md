@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello Jekyll, Goodbye Wordpress
-description: Hello Jekyll, Goodbye Wordpress.
+description: Hello Jekyll, Goodbye Wordpress. Why, I choose to develop my site with Jekyll and no longer use Wordpress.
 keywords: jekyll, wordpress, migration
 category : blog
 tags : [how-to, jekyll]
