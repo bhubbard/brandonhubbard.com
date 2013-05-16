@@ -48,6 +48,18 @@ h1.page-header {
 }
 
 
+
+
+
+/* Print Mode */
+@media print {
+	.avatar {
+		display:none;
+	}
+}
+
+
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	.avatar {
@@ -60,13 +72,4 @@ h1.page-header {
 	text-align: center;
 }
 p {text-align: justify;}
-}
-
-
-
-/* Print Mode */
-@media print {
-	.avatar {
-		display:none;
-	}
 }
