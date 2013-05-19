@@ -1,17 +1,25 @@
 {% include header.html %}
 
 <div class="container">
-<div class="row">
+<div class="row-fluid">
 	
 
+<div class="span2">
 	
+	<hr>
+<p>Published <br />
+	<time datetime="{{ entry.date }}" id="top_time">{{ page.date | date: "%B %d, %Y" }}</time>	
+</p>
+
+
+
+</div>	
 	
-<div class="span12">
+<div class="span8">
 
 <article class="post">
 	<header>
 		<h2 class="post-header">{{ page.title }}</h2>
-		<time datetime="{{ entry.date }}" id="top_time">{{ page.date | date: "%B %d, %Y" }}</time>
 	</header>
 	{{ content }}
 	
@@ -19,12 +27,13 @@
 
 	<strong><em>Enjoy this post? If so, please share!</em></strong> 
 	<br />
-<!-- ShareThis Button BEGIN -->
-<span class='st_facebook_hcount' displayText='Facebook'></span>
-<span class='st_twitter_hcount' displayText='Tweet' st_via='bhubbard'></span>
-<span class='st_plusone_hcount' displayText='Google +1' style="width:20px !important;"></span>
-<span class='st_linkedin_hcount' displayText='LinkedIn' style="width:20px !important;"></span>
-<!-- ShareThis Button END -->
+<div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_pinterest_share"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_pocket"></a>
+</div>
 
 </article>
 
