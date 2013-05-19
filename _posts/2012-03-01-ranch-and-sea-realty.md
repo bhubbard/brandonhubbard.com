@@ -3,6 +3,8 @@ layout: project_entry
 title: ERA Ranch & Sea Realty
 img: 
 category: projects
+client: John Beran
+company: imFORZA
 status: Launched 2012
 ---
 
