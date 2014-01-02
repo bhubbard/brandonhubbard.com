@@ -1,60 +1,24 @@
-{% include header.html %}
+---
+layout: default
+---
 
-<div class="container">
-<div class="row-fluid">
-	
-
-<div class="span2">
-	
-	<hr>
-<p>Published <br />
-	<time datetime="{{ entry.date }}" id="top_time">{{ page.date | date: "%B %d, %Y" }}</time>	
-</p>
+<div class="post">
+  <h1>{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }} - {{ content.size | readtime }} min read</span>
+  {{ content }}
 
 
-
-<!-- AddThis Trending Content BEGIN -->
-<div id="addthis_trendingcontent"></div>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f27543758fc3260"></script>
-<script type="text/javascript">
-addthis.box("#addthis_trendingcontent", {
-	feed_title : "",
-	feed_type : "shared",
-	feed_period : "month",
-	num_links : 5,
-	height : "auto",
-	width : "auto"});
-</script>
-<!-- AddThis Trending Content END -->
+  <hr>
+  {% include disqus.html %}
 
 
-
-</div>	
-	
-<div class="span8">
-
-<article class="post">
-	<header>
-		<h2 class="post-header">{{ page.title }}</h2>
-	</header>
-	{{ content }}
-	
-	<br />
-
-	<strong><em>Enjoy this post? If so, please share!</em></strong> 
-	<br />
-<div class="addthis_toolbox addthis_default_style addthis_16x16_style">
-<a class="addthis_button_facebook"></a>
-<a class="addthis_button_twitter"></a>
-<a class="addthis_button_pinterest_share"></a>
-<a class="addthis_button_google_plusone_share"></a>
-<a class="addthis_button_pocket"></a>
 </div>
 
-</article>
 
-</div>
-</div>
-</div>
-
-{% include footer.html %}
+  <hr>
+<div class="related">
+  <h2>Popular Articles</h2>
+  	<!-- AddThis Trending Content BEGIN -->
+  		<div id="addthis_trendingcontent"></div>
+  	<!-- AddThis Trending Content END -->
+ </div>

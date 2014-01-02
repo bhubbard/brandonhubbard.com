@@ -1,22 +1,21 @@
 ---
-layout: homepage
-title: "Sitemap"
+layout: default
+title: Sitemap
 ---
-
-{% for post in site.posts %}
-<div class="row-fluid">
-
-	<div class="span2 pull-left">
-		<p class="aside">{{ post.date | date: "%Y" }}</p>
-	</div>
-	
-	<div class="span4">
-		<h2 style="font-size:14px;"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	</div>
-	
-	<div class="span2 pull-right">
-		<p class="aside">{{ post.date | date: "%b %e" }}</p>
-	</div>
-	
-</div>
-{% endfor %}
+<div class="content__posts">
+  <div class="type-post">
+    <article class="entry">
+      <div class="contain">
+              <h1 class="page-title">{{ page.title }}</h1>
+                                {% for month in page.months %}
+                                        <h3>{{ month | date:"%B" }} <small>{{ month | date:"%Y" }}</small></h3>
+                                  <ul class="archive-list">
+                                  {% for post in page.posts_by_month[month] %}
+                                    <li><a href="{{ post.url }}">{{ post.title | truncate:65 }}</a></li>
+                                  {% endfor %}
+                                  </ul>
+                                {% endfor %}
+                        </div> <!-- .contain -->
+                </article>
+        </div><!-- .type-post -->
+</div><!-- .content__posts -->

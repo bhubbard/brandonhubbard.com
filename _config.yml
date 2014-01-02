@@ -1,9 +1,15 @@
-safe:  true
-lsi: false
-markdown: kramdown
-name: brandon
-auto:  true
-server:  false
-server_port:  4000
-permalink: /:categories/:title.html
-paginate: 10
+markdown:     kramdown
+permalink:    pretty
+pygments:     true
+comments: 	  true
+paginate:     5
+
+# Setup
+title:            Brandon Hubbard
+tagline:          'WordPress Developer'
+description:      'Personal Website for Brandon Hubbard.'
+url:              http://www.brandonhubbard.com
+
+author:
+  name:           'Brandon Hubbard'
+  url:            https://twitter.com/bhubbard

@@ -1,14 +1,15 @@
----
-layout: page
-title: Home
----
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-{% include header.html %}
+  {% include head.html %}
 
-<article class="post">
-	<h2 class="entry-title"><a class="no-link" href="#">{{ page.title }}</a></h2>
+  <body>
 
-	{{ content }}
-</article>
+    {% include sidebar.html %}
 
-{% include footer.html %}
+    <div class="content container">
+      {{ content }}
+    </div>
+
+  </body>
+</html>
