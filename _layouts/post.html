@@ -4,21 +4,15 @@ layout: default
 
 <div class="post">
   <h1>{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }} - {{ content.size | readtime }} min read</span>
+  <span class="post-date">{{ page.date | date: "%B %d, %Y" }} - {{ content.size | readtime }} min read</span>
   {{ content }}
 
 
   <hr>
   {% include disqus.html %}
 
-
 </div>
 
 
-  <hr>
-<div class="related">
-  <h2>Popular Articles</h2>
-  	<!-- AddThis Trending Content BEGIN -->
-  		<div id="addthis_trendingcontent"></div>
-  	<!-- AddThis Trending Content END -->
- </div>
+{% include analytics.html %}
+{% include addthis.html %}

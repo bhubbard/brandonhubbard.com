@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" xmlns:fb="http://ogp.me/ns/fb#">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
@@ -12,26 +12,27 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+	<!-- OpenID -->
     <link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud?source=profiles" />
 	<link rel="openid2.local_id" href="http://www.google.com/profiles/bkhubbard" />
 
-	<!-- Author Info for Google -->
+	<!-- Google -->
     <link rel="author" href="https://plus.google.com/105951994557667533128">
     <meta name="author" content="Brandon Hubbard">
     <link rel="canonical" href="http://brandonhubbard.com{{ page.url }}">
-    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
+    <meta name="description" content="{{ page.description }}">
 
-    <!-- Facebook Article Info -->
+    <!-- Open Graph -->
     <meta property="og:image" content="http://brandonhubbard.com/uploads/#####">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} &middot; {{ site.title }}{% else %}{{ site.title }} &middot; {{ site.tagline }}{% endif %}">
     <meta property="og:site_name" content="Brandon Hubbard">
     <meta property="og:url" content="http://brandonhubbard.com{{ page.url }}">
-    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
+    <meta property="og:description" content="{{ page.description }}">
     {% if page.custom_type %}
     <meta property="og:type" content="article">
     {% endif %}
 
-	<!-- Twitter Info -->
+	<!-- Twitter -->
 	<meta property="twitter:card" content="summary" />
 	<meta property="twitter:site" content="@brandonhubbard" />
 	<meta property="twitter:creator" content="@bhubbard" />
@@ -48,7 +49,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:100,300,700,300italic,700italic">
-    <link rel="stylesheet" href="/assets/css/hyde.css">
+    <link rel="stylesheet" href="/assets/css/general.css">
 
     <!-- icons -->
   	<link rel="shortcut icon" href="//www.gravatar.com/avatar/3596404cbc9ffb7d4f48524e08340d86?s=16" />
