@@ -354,3 +354,46 @@ div#logo a {
 .post img {
 	max-width: 100% !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Large desktop */
+@media (min-width: 1200px) {  }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+.content, .masthead-inner, .post {margin: 0 20px;}
+.post {margin-top: 30px;}
+.masthead-inner {padding: 50px 0;}
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+.masthead-inner {
+	text-align: center !important;
+}
+
+.avatar{
+	margin-left: 35%;
+
+}
+
+}
