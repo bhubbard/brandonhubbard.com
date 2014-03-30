@@ -162,6 +162,16 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/made-in-ca-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9423,
+		"inputAbbreviatedPath": "\/assets\/img\/made-in-ca-small.png",
+		"outputAbbreviatedPath": "\/assets\/img\/made-in-ca-small.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/assets\/img\/made-in-ca.png": {
 		"fileType": 32768,
 		"ignore": 0,
