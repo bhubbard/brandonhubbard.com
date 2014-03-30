@@ -1,0 +1,44 @@
+---
+layout: archive
+---
+
+<div class="container">
+
+<h1>Blog</h1>
+
+{% for post in site.posts %}
+  <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+		<div class="article-head">
+			<h2 class="title"><a href="{{ post.url }}" class="js-pjax">{{ post.title }}</a></h2>
+			<p class="date">{{ post.date | date: "%b %d, %Y" }}</p>
+		</div><!--/.article-head-->
+		<div class="article-content">
+		{{ post.long_description }}
+		<a href="{{ post.url }}" class="full-post-link js-pjax">Read more</a>
+		</div><!--/.article-content-->
+	</article>
+	{% if forloop.last %}{% else %}<div class="separater"></div>{% endif %}
+{% endfor %}
+
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="older">Older</a>
+  {% else %}
+    <span class="next">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a href="/" class="newer">Newer</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="previous">Newer</span>
+  {% endif %}
+</div>
+
+
+</div>

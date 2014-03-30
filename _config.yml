@@ -1,18 +1,79 @@
-markdown:     kramdown
-permalink:     '/blog/:year/:title/'
+######################################
+# Site Details
+######################################
+name: "Brandon Hubbard"
 
-pygments:     true
-comments: 	  true
-paginate:     5
+tagline: "Website Design & Development"
+logo:
+disqus_shortname: bhubbard
+
+# Title display in search engines is limited to 70 characters.
+tite:
+#The meta description will be limited to 156 characters.
+description: ""
+
+# Social Description
+# Facebook Image
+# Facebook Description
+# Google Plus Description
+
+#Focus Keyword
+
+meta_robots:
+
+######################################
+# Owner/Author Info
+######################################
+owner:
+  name:           Brandon Hubbard
+  avatar:         your-photo.jpg
+  email:
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:
+  facebook:
+  github:
+  linkedin:
+  instagram:
+  tumblr:
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:
+
+  addthis_pubid: ra-4f27543758fc3260
+
+
+openid_provider: https://www.google.com/accounts/o8/ud?source=profiles
+openid_localid: http://www.google.com/profiles/bkhubbard
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+
+#Comment out url when working locally to resolve base urls correctly
+url: http://localhost:4000
+
+paginate: 3
+
+# Support Code Snippet highlighting, must have Python installed
+pygments: true
 
 
 
-# Setup
-title:            Brandon Hubbard
-tagline:          'WordPress Developer'
-description:      'Personal Website for Brandon Hubbard.'
-url:              http://www.brandonhubbard.com
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /blog/:title
 
-author:
-  name:           'Brandon Hubbard'
-  url:            https://twitter.com/bhubbard
+
+# Jekyll config
+exclude:
+  - CNAME
+  - Makefile
+  - README.md
+
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles
+
+
+

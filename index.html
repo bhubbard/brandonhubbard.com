@@ -1,38 +1,6 @@
 ---
-layout: default
+layout: homepage
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
 
-  <div class="post">
-    <h2>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h2>
-
-    <span class="post-date">{{ post.date | date: "%B %d, %Y" }} - {{ content.size | readtime }} min read</span>
-
-    {{ post.description }}
-  </div>
-  {% endfor %}
-</div>
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="older">Older</a>
-  {% else %}
-    <span class="next">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a href="/" class="newer">Newer</a>
-    {% else %}
-      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="previous">Newer</span>
-  {% endif %}
-</div>
+dsfd

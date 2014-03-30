@@ -2,3 +2,6 @@ _site/*
 .DS_Store
 Thumbs.db
 *.esproj
+
+.codekit-cache
+.sass-cache
