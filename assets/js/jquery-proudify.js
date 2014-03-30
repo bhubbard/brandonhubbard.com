@@ -172,8 +172,8 @@
         return service.create('img', {
           'alt': item.name,
           'title': item.description,
-          'src': item.badge
-        }).appendTo(elements.link);
+          'src': item.badge,
+        }).attr('height', '200').attr('width', '200').appendTo(elements.link);
       });
     };
 
