@@ -24,7 +24,7 @@ meta_robots:
 ######################################
 # Owner/Author Info
 ######################################
-owner:
+  owner:
   name:           Brandon Hubbard
   avatar:         your-photo.jpg
   email:
@@ -41,14 +41,14 @@ owner:
   addthis_pubid: ra-4f27543758fc3260
 
 
-openid_provider: https://www.google.com/accounts/o8/ud?source=profiles
-openid_localid: http://www.google.com/profiles/bkhubbard
+  openid_provider: https://www.google.com/accounts/o8/ud?source=profiles
+  openid_localid: http://www.google.com/profiles/bkhubbard
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+  # Analytics and webmaster tools stuff goes here
+  google_analytics:
+  google_verify:
+  # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+  bing_verify:
 
 
 #Comment out url when working locally to resolve base urls correctly
