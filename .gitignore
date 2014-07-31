@@ -5,3 +5,11 @@ Thumbs.db
 
 .codekit-cache
 .sass-cache
+
+_drafts/
+.DS_Store
+*.swp
+_jekyll_s3.yml
+upload.py
+s3_website.yml
+Gemfile.lock
