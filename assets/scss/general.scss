@@ -1,220 +1,180 @@
 @import 'bootstrap-overrides';
-@import 'animate';
-@import 'proudify';
-
-
-
-
-
+// @import 'animate';
+// @import 'proudify';
 
 .body {
-	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
-
-/* Add This Custom CSS */
-.atss {
-	top: 40% !important;
-}
-
 
 .main-menu {
-		background: #282b2d;
-	color: #fff;
-	padding: 5px 0;
-}
-.main-menu a {
-	color: #fff;
-}
-.main-menu .nav-pills a:hover {
-	background: none;
-	color: #428bca;
+	background:#282b2d;
+	color:#fff;
+	padding:5px 0;
 }
 
+.main-menu a {
+	color:#fff;
+}
+
+.main-menu .nav-pills a:hover {
+	background:none;
+	color:#428bca;
+}
 
 .intro {
-	text-align: justify;
-	font-size: 14px;
-
+	text-align:justify;
+	font-size:14px;
 }
+
 .intro a {
-	color: #282b2d;
-	font-weight: bold;
-
+	color:#282b2d;
+	font-weight:700;
 }
-
 
 /* Logo Stuff */
 .brandon {
 	display:inline;
-	color: #282b2d;
+	color:#282b2d;
 	font-weight:300;
 	font-size:30px;
 }
 
 .hubbard {
 	display:inline;
-	color: #282b2d;
+	color:#282b2d;
 	font-weight:700;
 	font-size:30px;
 }
 
 .tagline {
-	color: #9c9c9c;
+	color:#9c9c9c;
 }
 
-
-
-
-
-
-
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1.1;
-
-
+h1,h2,h3,h4,h5,h6 {
+	line-height:1.1;
 }
-
 
 .content {
-	min-height: 700px;
+	min-height:700px;
 }
 
 .content h1 {
-	font-size: 50px;
-	line-height: 1.1;
-	letter-spacing: -0.04em;
+	font-size:50px;
+	line-height:1.1;
+	letter-spacing:-.04em;
 }
+
 .content h2 {
-	letter-spacing: 0.01em;
-font-weight: 100;
-font-style: normal;
-line-height: 1.1;
-color: #999;
-margin: 0 0 3.75rem 0;
+	letter-spacing:.01em;
+	font-weight:100;
+	font-style:normal;
+	line-height:1.1;
+	color:#999;
+	margin:0 0 3.75rem;
 }
 
 .content p {
-	margin-bottom: 30px;
-	letter-spacing: .01rem;
-	font-weight: 200;
-	font-style: normal;
-	font-size: 22px;
-	line-height: 1.5;
+	margin-bottom:30px;
+	letter-spacing:.01rem;
+	font-weight:200;
+	font-style:normal;
+	font-size:22px;
+	line-height:1.5;
 }
-
-
 
 h1 {
-	font-weight: bold;
+	font-weight:700;
 }
-
-
 
 .footer {
-	margin-bottom: 50px;
-	padding-top: 20px;
+	margin-bottom:50px;
+	padding-top:20px;
 }
-
 
 .comments {
-	background: #282b2d;
-	color: #fff;
-	padding: 20px 0;
-}
-.comments h2 {
-	text-transform: uppercase;
+	background:#282b2d;
+	color:#fff;
+	padding:20px 0;
 }
 
+.comments h2 {
+	text-transform:uppercase;
+}
 
 .content {
-	padding: 2em 0;
-	margin: 2em 0;
+	padding:2em 0;
+	margin:2em 0;
 }
 
-
-
-
-
 .back-to-top {
-    position: fixed;
-    bottom: 2em;
-    right: 2em;
-    text-decoration: none;
-    color: #fff;
-    background-color: #282b2d;
-    font-size: 12px;
-    padding: 1em;
-    display: none;
+	position:fixed;
+	bottom:2em;
+	right:2em;
+	text-decoration:none;
+	color:#fff;
+	background-color:#282b2d;
+	font-size:12px;
+	padding:1em;
+	display:none;
 }
 
 .back-to-top:hover {
-    background-color: rgba(135, 135, 135, 0.50);
-    color: #fff;
-    text-decoration: none;
+	background-color:rgba(135,135,135,0.50);
+	color:#fff;
+	text-decoration:none;
 }
-
-
 
 ul.recent-posts {
-	margin: 0;
-	padding: 0;
+	margin:0;
+	padding:0;
 }
+
 .recent-posts li:first-child {
-	margin-top: 0;
-	padding-top: 0;
+	margin-top:0;
+	padding-top:0;
 }
 
 .recent-posts li {
-	margin: 10px 0;
-	padding: 5px 0;
-	list-style-type: none;
+	margin:10px 0;
+	padding:5px 0;
+	list-style-type:none;
 }
 
 .recent-posts li:hover {
-
 }
 
 .recent-posts li .post-title {
 	display:inline;
-	color: #282b2d;
+	color:#282b2d;
 }
 
 .recent-posts li .post-date {
-	display:inline;float:right;text-align:right;
-	color: #999999;
+	display:inline;
+	float:right;
+	text-align:right;
+	color:#999;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Large desktop */
 @media (min-width: 1200px) {
-
-.post, .content {min-height: 500px;}
-
- }
+	.post,.content {
+		min-height:500px;
+	}
+}
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {  }
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-
-body {padding-bottom: 50px;}
- }
+	body {
+		padding-bottom:50px;
+	}
+}
 
 /* Landscape phones and down */
-@media (max-width: 480px) { }
+@media (max-width: 480px) {
+
+}
