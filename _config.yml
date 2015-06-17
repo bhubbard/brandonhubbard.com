@@ -42,7 +42,7 @@ meta_robots:
 
 
   openid_provider: https://www.google.com/accounts/o8/ud?source=profiles
-  openid_localid: http://www.google.com/profiles/bkhubbard
+  openid_localid: https://www.google.com/profiles/bkhubbard
 
   # Analytics and webmaster tools stuff goes here
   google_analytics:
@@ -77,5 +77,4 @@ timezone: America/Los_Angeles
 
 
 gems:
-  - jekyll-redirect-from
   - octopress-minify-html
