@@ -17,8 +17,15 @@
 	<!-- Google -->
     <link rel="author" href="https://plus.google.com/105951994557667533128">
     <meta name="author" content="Brandon Hubbard">
-    <link rel="canonical" href="https://brandonhubbard.com{{ page.url }}">
     <meta name="description" content="{{ page.description }}">
+    
+    
+    {% if page.url contains "blog/page" %}
+{% assign canonical = "/blog/" %}
+{% else %}
+{% assign canonical = page.url|remove:'index.html' %}
+{% endif %}
+<link rel="canonical" href="{{ site.url }}{{ canonical }}">
 
 	<!-- Open Graph -->
 	{% include opengraph.html %}
