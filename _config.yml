@@ -78,3 +78,4 @@ timezone: America/Los_Angeles
 
 gems:
   - octopress-minify-html
+  - jekyll-feed
